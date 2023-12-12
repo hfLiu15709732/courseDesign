@@ -58,6 +58,6 @@ def setting_voice_main(voice,isMute):
 
 def setting_color_main(color,userid):
     db = SQLManager()
-    data = db.get_list(f'UPDATE userSetting SET color = "{color}" WHERE userId = 1;')
+    data = db.get_list(f'UPDATE setting SET color = "{color}" WHERE userId = 1;')
 
 

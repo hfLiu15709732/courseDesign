@@ -21,12 +21,8 @@ def api_setting_voice():
     except Exception as e:
         return create_result("修改失败，请重新尝试", 500), 500
 
-
-
 @router.route('/test', methods=['GET'])
 def api_setting_test():
-
-
     try:
         db = SQLManager()
         data = db.get_list('select * from tb_hotel;')

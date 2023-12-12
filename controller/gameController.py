@@ -14,6 +14,7 @@ def api_start():
     try:
         thread1 = Thread(target=start_game, args=("null",))
         thread2 = Thread(target=start_aside_window, args=("null",))
+
         # 开启动线程
         thread1.start()
         thread2.start()
